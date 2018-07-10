@@ -59,6 +59,10 @@ class MyURI
   def initialize(str)
     @uri = URI(str)
   end
+
+  def get_uri_hash
+    'TODO - Implement get_uri_hash'
+  end
 end
 
 uri = MyURI.new(url)
