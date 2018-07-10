@@ -53,3 +53,13 @@ end
 uri_hash = get_uri_hash(url)
 
 puts uri_hash
+
+
+class MyURI
+  def initialize(str)
+    @uri = URI(str)
+  end
+end
+
+uri = MyURI.new(url)
+uri.get_uri_hash #=> { scheme: 'https', port: '80', ...}
